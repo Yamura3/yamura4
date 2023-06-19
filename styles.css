@@ -94,7 +94,9 @@ header {
 }
 
 header h1 {
-    color: #fff;
+    color: #8b0000;
+    text-shadow: 2px 2px 4px #00008b;
+    font-family: 'Moirai One', cursive;
     font-size: 24px;
 }
 
