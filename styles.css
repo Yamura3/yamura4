@@ -21,6 +21,7 @@ blockquote {
   font-style: bold;
   color: #333;
   margin: 0;
+  font-family: 'Rubik Iso', cursive;
   background-image: linear-gradient(to right, #8b0000, #00008b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -35,6 +36,7 @@ cite {
   font-size: 18px;
   font-weight: bold;
   margin-top: 20px;
+  font-family: 'Rubik Iso', cursive;
   background-image: linear-gradient(to right, #8b0000, #00008b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
