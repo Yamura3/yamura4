@@ -18,7 +18,7 @@ body {
 
 blockquote {
   font-size: 24px;
-  font-style: italic;
+  font-style: italic, bold;
   color: #333;
   margin: 0;
   background-image: linear-gradient(to right, #8b0000, #00008b);
