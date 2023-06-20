@@ -29,6 +29,10 @@ blockquote {
 
 blockquote p {
   margin: 0 0 10px;
+  font-family: 'Rubik Iso', cursive;
+  background-image: linear-gradient(to right, #8b0000, #00008b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 cite {
