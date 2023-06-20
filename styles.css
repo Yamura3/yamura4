@@ -23,7 +23,7 @@ blockquote {
   color: #333;
   margin: 0;
   font-family: 'Kanit', sans-serif;
-  background-image: linear-gradient(to right, #8b0000, #00008b);
+  background-image: linear-gradient(#8b0000, #00008b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -31,7 +31,7 @@ blockquote {
 blockquote p {
   margin: 0 0 10px;
   font-family: 'Kanit', sans-serif;
-  background-image: linear-gradient(to right, #8b0000, #00008b);
+  background-image: linear-gradient(#8b0000, #00008b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
