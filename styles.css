@@ -17,7 +17,7 @@ body {
   font-family: 'Kanit', sans-serif;
 }
 span{
-  background:#1D1F20;
+  background:#171717;
   color:#00008b;
   padding:0 10px;
   font-size:20px;
@@ -30,7 +30,7 @@ span{
   border:1px solid #fff;
   transform:rotate(-45deg);  
   position:absolute;
-  background:#1D1F20;
+  background:#171717;
 }
 
 #left_top{
