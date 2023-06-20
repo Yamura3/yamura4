@@ -67,7 +67,43 @@
 
             <section>
                 <h2>Contact</h2>
-                <a href="mailto:marceldoethetweer.be@gmail.com">📧 Mail me</a>
+                <form action="mailto:marceldoethetweer.be@gmail.com?subject=Thespikon vraag via website" method="post" enctype="text/plain"> <p>
+                <label for="Voornaam">Voornaam: *</label>
+                <br/>
+                <input type="text" name="Voornaam" required/>
+                </p>
+                <label for="Achternaam">Achternaam: *</label>
+                <br/>
+                <input type="text" name="Achternaam" required/>
+                </p>
+                <p>
+                <label for="Email">E-mail: *</label>
+                <br/>
+                <input type="email" name="Email" required/>
+                </p>
+                <p>
+                <label for="AntwEmail">Mag ik je antwoorden op dit e-mailadres? *</label>
+                <br/>
+                <input type="radio" name="AntwEmail" value="Ja" checked /> Ja
+                <input type="radio" name="AntwEmail" value="Nee"/> Neen
+                </p>
+                <p>
+                <label for="overWat">Over wat heb je een vraag/suggestie/feedback? *</label>
+                <br/>
+                <input type="radio" name="overWat" value="optreden" checked /> Optreden
+                <input type="radio" name="overWat" value="website"/> Website
+                <input type="radio" name="overWat" value="inschrijvingen"/> Inschrijvingen
+                <input type="radio" name="overWat" value="ander"/> Anders
+                </p>
+                <p>
+                <label for="Bericht">Wat is je vraag/suggestie/feedback? *</label>
+                <br/>
+                <textarea name="Bericht"> </textarea>
+                </p>
+                <input id="btn" type="submit" value="Verzenden" />
+                <input id="btn2" type="reset" value="Resetten" />
+                </form>
+                <a href="mailto:marceldoethetweer.be@gmail.com">📧 or just E-Mail me</a>
         </section>
         </div>
 
