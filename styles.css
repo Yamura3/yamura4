@@ -244,11 +244,7 @@ section ul li {
     margin-bottom: 5px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 form p {
   margin: 10px 0;
@@ -290,14 +286,6 @@ form input[type="submit"]:hover,
 form input[type="reset"]:hover {
   background-color: #000;
 }
-
-.container {
-  background-color: #1D1F20;
-  padding: 20px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
 
     
 footer {
