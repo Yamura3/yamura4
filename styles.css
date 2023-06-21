@@ -244,8 +244,37 @@ section ul li {
     margin-bottom: 5px;
 }
 
-#sendform,
-#resetform {
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form p {
+  margin: 10px 0;
+}
+
+form label {
+  color: #00008b;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 10px;
+  border: 2px solid #8b0000;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
   background-color: #8b0000;
   color: #fff;
   padding: 10px 20px;
@@ -257,10 +286,18 @@ section ul li {
   transition: background-color 0.3s ease;
 }
 
-#sendform:hover,
-#resetform:hover {
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
   background-color: #000;
 }
+
+.container {
+  background-color: #1D1F20;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
 
     
 footer {
