@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Yamura4's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -71,46 +72,54 @@
             <section>
                 <h2>Contact</h2>
                 <div class="containerform">
-                    <form onsubmit="sendEmail()" method="post" enctype="text/plain"> <p>
-                    <label for="Voornaam">first name: *</label>
-                    <br/>
-                    <input type="text" name="firstname" required/>
-                    </p>
-                    <label for="Achternaam">last name: *</label>
-                    <br/>
-                    <input type="text" name="lastname" required/>
-                    </p>
-                    <p>
-                    <label for="Email">E-mail: *</label>
-                    <br/>
-                    <input type="email" name="Email" required/>
-                    </p>
-                    <p>
-                    <label for="message">What is your question/suggestion/feedback? *</label>
-                    <br/>
-                    <textarea name="Message"> </textarea>
-                    </p>
-                    <input id="sendform" type="submit" value="Send" />
-                    <input id="resetform" type="reset" value="Reset" />
-                    </form>
-                    <a href="mailto:marceldoethetweer.be@gmail.com">📧 or just E-Mail me</a>
-                <div>
-                <script src="https://smtpjs.com/v3/smtp.js"></script>
-                <script>
-                    function sendEmail(){
-                        Email.send({
-                            Host : "smtp.elasticemail.com",
-                            Username : "username",
-                            Password : "password",
-                            To : 'them@website.com',
-                            From : "you@isp.com",
-                            Subject : "This is the subject",
-                            Body : "And this is the body"
-                        }).then(
-                          message => alert(message)
-                        );
-                    }
-                </script>
+                    <form id="contactForm">
+                        <p>
+                          <label for="firstName">First Name:</label><br>
+                          <input type="text" id="firstName" name="firstName" required>
+                        </p>
+                        <p>
+                          <label for="lastName">Last Name:</label><br>
+                          <input type="text" id="lastName" name="lastName" required>
+                        </p>
+                        <p>
+                          <label for="email">Email:</label><br>
+                          <input type="email" id="email" name="email" required>
+                        </p>
+                        <p>
+                          <label for="message">Message:</label><br>
+                          <textarea id="message" name="message" rows="5" required></textarea>
+                        </p>
+                        <p>
+                          <input type="submit" value="Send Message">
+                        </p>
+                      </form>
+                    
+                      <script>
+                        document.getElementById("contactForm").addEventListener("submit", function (event) {
+                          event.preventDefault();
+                    
+                          // Get form values
+                          var firstName = document.getElementById("firstName").value;
+                          var lastName = document.getElementById("lastName").value;
+                          var email = document.getElementById("email").value;
+                          var message = document.getElementById("message").value;
+                    
+                          // Send email using SMTP.js
+                          Email.send({
+                            SecureToken: "YOUR_SECURE_TOKEN",
+                            To: "marceldoethetweer.be@gmail.com",
+                            From: email,
+                            Subject: "Form Submission from Yamura4 Portfolio",
+                            Body: "First Name: " + firstName + "<br>Last Name: " + lastName + "<br>Email: " + email + "<br><br>" + message
+                          }).then(function () {
+                            alert("Email sent successfully!");
+                            document.getElementById("contactForm").reset();
+                          }).catch(function (error) {
+                            console.error("Error sending email:", error);
+                            alert("Error sending email. Please try again later.");
+                          });
+                        });
+                      </script>
         </section>
         </div>
 
