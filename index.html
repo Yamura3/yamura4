@@ -71,7 +71,7 @@
             <section>
                 <h2>Contact</h2>
                 <div class="containerform">
-                    <form action="process_form.php" method="post" enctype="text/plain"> <p>
+                    <form action="sendEmail()" method="post" enctype="text/plain"> <p>
                     <label for="Voornaam">first name: *</label>
                     <br/>
                     <input type="text" name="firstname" required/>
@@ -95,6 +95,22 @@
                     </form>
                     <a href="mailto:marceldoethetweer.be@gmail.com">📧 or just E-Mail me</a>
                 <div>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                    function sendEmail(){
+                        Email.send({
+                            Host : "smtp.elasticemail.com",
+                            Username : "username",
+                            Password : "password",
+                            To : 'them@website.com',
+                            From : "you@isp.com",
+                            Subject : "This is the subject",
+                            Body : "And this is the body"
+                        }).then(
+                          message => alert(message)
+                        );
+                    }
+                </script>
         </section>
         </div>
 
