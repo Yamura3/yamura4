@@ -92,34 +92,7 @@
                         <p>
                           <input type="submit" value="Send Message">
                         </p>
-                      </form>
-                    
-                      <script>
-                        document.getElementById("contactForm").addEventListener("submit", function (event) {
-                          event.preventDefault();
-                    
-                          // Get form values
-                          var firstName = document.getElementById("firstName").value;
-                          var lastName = document.getElementById("lastName").value;
-                          var email = document.getElementById("email").value;
-                          var message = document.getElementById("message").value;
-                    
-                          // Send email using SMTP.js
-                          Email.send({
-                            SecureToken: "7fd16c9b-f13c-4fbe-ae1e-f4bf2eed50f2",
-                            To: "marceldoethetweer.be@gmail.com",
-                            From: email,
-                            Subject: "Form Submission from Yamura4 Portfolio",
-                            Body: "First Name: " + firstName + "<br>Last Name: " + lastName + "<br>Email: " + email + "<br><br>" + message
-                          }).then(function () {
-                            alert("Email sent successfully!");
-                            document.getElementById("contactForm").reset();
-                          }).catch(function (error) {
-                            console.error("Error sending email:", error);
-                            alert("Error sending email. Please try again later.");
-                          });
-                        });
-                      </script>
+                    </form>
                     <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=uls33ukc&n=n1.ratufa.io"></script>
         </section>
         </div>
