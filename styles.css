@@ -196,6 +196,68 @@ header h1 {
     font-size: 24px;
 }
 
+.skills {
+  text-align: center;
+}
+
+.skill {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  width: 120px;
+}
+
+.skill-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #8b0000;
+  border-radius: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.skill-name {
+  display: block;
+  margin-top: 10px;
+}
+
+.skill-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+[data-progress]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #8b0000;
+  border-radius: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  z-index: -1;
+}
+
+[data-progress]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--progress) * 100%);
+  height: 100%;
+  background-color: #8b0000;
+  border-radius: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  z-index: -1;
+}
+
+
 .main-content {
     margin-top: 60px;
     padding: 20px;
