@@ -221,6 +221,7 @@ header h1 {
 .skill-name {
   display: block;
   margin-top: 10px;
+  background-color: transparant;
 }
 
 .skill-percentage {
@@ -229,6 +230,7 @@ header h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bold;
+  background-color: transparant;
 }
 
 [data-progress]::before {
