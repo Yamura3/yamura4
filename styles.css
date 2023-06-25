@@ -118,10 +118,10 @@ a:hover::after {
   color: white;
 }
 
-.html {width: 70%; background-color: #04AA6D;}
-.css {width: 84%; background-color: #2196F3;}
-.python {width: 82%; background-color: #f44336;}
-.scratch {width: 99%; background-color: #808080;}
+.html {width: 70%; background-color: #00008b;}
+.css {width: 84%; background-color: #00008b;}
+.python {width: 82%; background-color: #00008b;}
+.scratch {width: 99%; background-color: #00008b;}
 
 body {
     display: table;
