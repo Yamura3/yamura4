@@ -216,7 +216,7 @@ header h1 {
 .main-content {
     margin-top: 60px;
     padding: 20px;
-    padding-bottom: 100px; /* Added padding to avoid overlapping with the footer */
+    padding-bottom: 100px; 
 }
 
 .skills {
@@ -363,6 +363,17 @@ form input[type="submit"]:hover,
 form input[type="reset"]:hover {
   background-color: #000;
 }
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="submit"],
+input[type="reset"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 
 .containerform {
   background-color: #00008b;
