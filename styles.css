@@ -370,6 +370,7 @@ textarea,
 input[type="submit"],
 input[type="reset"] {
   display: block;
+  width: 100%;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -379,6 +380,9 @@ input[type="reset"] {
 
 .containerform {
   background-color: #00008b;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
     
